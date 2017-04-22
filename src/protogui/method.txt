@@ -1,0 +1,4 @@
+otp generation 
+
+random rd =new random();
+random.nextINT()

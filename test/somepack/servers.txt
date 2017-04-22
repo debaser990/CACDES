@@ -1,0 +1,78 @@
+Multi Threaded Access Server Pseudo code
+
+method 
+
+class accessserver implements runnable {
+
+main()
+{
+create serversocket
+    while(true)
+    {
+    //serversocket accepts sockets
+    //each socket creates new thread
+    }
+}
+
+run()
+{
+checks for method number 
+switch case calls the method
+}
+
+private method1()
+private method2()
+private method3()
+
+}
+
+
+
+Logic 2
+
+server.java
+class server {
+global variables- ssocket
+server()            //constructor
+{   
+create serversocket
+while(server_status==true)
+    {
+    //serversocket accepts client_socket
+    //create new client thread client_thread(client_socket)
+    client_thread.start();
+        }
+//sockets close
+}
+main()
+new server();
+}
+
+class client_thread extends Thread
+{
+socket myclientsock;
+boolean threadstatus=true;
+                
+                public client_thread(){ //default constructor
+                super();
+                }
+
+                client_thread(socket s)     //parameterized constructor
+                {
+                myclientsock=s;
+                }
+
+                public void run(){
+                perform i/o
+                while(threadstatus==true){
+
+                if(!serveron)
+                    close server & sop(Server has stopped)
+                    threadstatus=false;    
+
+                        }
+
+                }
+
+
+}
